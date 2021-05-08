@@ -15,11 +15,9 @@ public class SaleDTO {
 	private SellerDTO seller;
 	
 	public SaleDTO() {
-		
 	}
 
 	public SaleDTO(Long id, Integer visited, Integer deals, Double amount, LocalDate date, SellerDTO seller) {
-		
 		this.id = id;
 		this.visited = visited;
 		this.deals = deals;
@@ -28,64 +26,60 @@ public class SaleDTO {
 		this.seller = seller;
 	}
 	
-public SaleDTO(Sale entity ) {
-		
-	this.id = entity.getId();
-	this.visited = entity.getVisited();
-	this.deals = entity.getDeals();
-	this.amount = entity.getAmount();
-	this.date = entity.getDate();
-	this.seller = new SellerDTO( entity.getSeller());
+	public SaleDTO(Sale entity) {
+		id = entity.getId();
+		visited = entity.getVisited();
+		deals = entity.getDeals();
+		amount = entity.getAmount();
+		date = entity.getDate();
+		seller = new SellerDTO(entity.getSeller());
 	}
 
-public Long getId() {
-	return id;
-}
+	public Long getId() {
+		return id;
+	}
 
-public void setId(Long id) {
-	this.id = id;
-}
+	public void setId(Long id) {
+		this.id = id;
+	}
 
-public Integer getVisited() {
-	return visited;
-}
+	public Integer getVisited() {
+		return visited;
+	}
 
-public void setVisited(Integer visited) {
-	this.visited = visited;
-}
+	public void setVisited(Integer visited) {
+		this.visited = visited;
+	}
 
-public Integer getDeals() {
-	return deals;
-}
+	public Integer getDeals() {
+		return deals;
+	}
 
-public void setDeals(Integer deals) {
-	this.deals = deals;
-}
+	public void setDeals(Integer deals) {
+		this.deals = deals;
+	}
 
-public Double getAmount() {
-	return amount;
-}
+	public Double getAmount() {
+		return amount;
+	}
 
-public void setAmount(Double amount) {
-	this.amount = amount;
-}
+	public void setAmount(Double amount) {
+		this.amount = amount;
+	}
 
-public LocalDate getDate() {
-	return date;
-}
+	public LocalDate getDate() {
+		return date;
+	}
 
-public void setDate(LocalDate date) {
-	this.date = date;
-}
+	public void setDate(LocalDate date) {
+		this.date = date;
+	}
 
-public SellerDTO getSeller() {
-	return seller;
-}
+	public SellerDTO getSeller() {
+		return seller;
+	}
 
-public void setSeller(SellerDTO seller) {
-	this.seller = seller;
-}
-	
-	
-	
+	public void setSeller(SellerDTO seller) {
+		this.seller = seller;
+	}
 }
